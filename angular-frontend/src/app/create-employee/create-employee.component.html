@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" minlength="3" class="form-control" id="name" [(ngModel)]="employee.name"
+                            name="name">
+      </div>
+    <div class="form-group">
+      <label for="inputCoins1">Coins</label>
+      <input type="number" class="form-control"  id="inputCoins1" placeholder="Enter coins" [(ngModel)]="employee.coins" name="coins">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
